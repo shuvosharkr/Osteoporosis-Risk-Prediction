@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="days_left <= 0.281\nsquared_error = 0.017\nsamples = 7999\nvalue = 0.13", fillcolor="#f6d5be"] ;
+1 [label="duration <= 0.064\nsquared_error = 0.022\nsamples = 2005\nvalue = 0.278", fillcolor="#eba06a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="days_left <= 0.052\nsquared_error = 0.001\nsamples = 541\nvalue = 0.136", fillcolor="#f6d3ba"] ;
+1 -> 2 ;
+3 [label="squared_error = 0.005\nsamples = 89\nvalue = 0.162", fillcolor="#f4caac"] ;
+2 -> 3 ;
+4 [label="squared_error = 0.0\nsamples = 452\nvalue = 0.13", fillcolor="#f6d5bd"] ;
+2 -> 4 ;
+5 [label="days_left <= 0.198\nsquared_error = 0.02\nsamples = 1464\nvalue = 0.331", fillcolor="#e88d4c"] ;
+1 -> 5 ;
+6 [label="squared_error = 0.021\nsamples = 957\nvalue = 0.365", fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label="squared_error = 0.012\nsamples = 507\nvalue = 0.266", fillcolor="#eca471"] ;
+5 -> 7 ;
+8 [label="duration <= 0.083\nsquared_error = 0.005\nsamples = 5994\nvalue = 0.08", fillcolor="#fae7da"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="duration <= 0.064\nsquared_error = 0.0\nsamples = 1743\nvalue = 0.015", fillcolor="#fffefe"] ;
+8 -> 9 ;
+10 [label="squared_error = 0.0\nsamples = 1649\nvalue = 0.014", fillcolor="#ffffff"] ;
+9 -> 10 ;
+11 [label="squared_error = 0.001\nsamples = 94\nvalue = 0.042", fillcolor="#fdf5ef"] ;
+9 -> 11 ;
+12 [label="airline_Indigo <= 0.5\nsquared_error = 0.005\nsamples = 4251\nvalue = 0.107", fillcolor="#f8decb"] ;
+8 -> 12 ;
+13 [label="squared_error = 0.005\nsamples = 3732\nvalue = 0.115", fillcolor="#f8dbc6"] ;
+12 -> 13 ;
+14 [label="squared_error = 0.002\nsamples = 519\nvalue = 0.048", fillcolor="#fcf3ec"] ;
+12 -> 14 ;
+}
